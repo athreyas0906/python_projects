@@ -62,39 +62,39 @@ def showboard(field):
             for table in range(1,4):
                 for cell in range(1,4):
                     if cell<3:
-                            print(' ',field[table][line][cell],end=' |')
+                            print('',field[table][line][cell],end=' |')
                     elif cell==3 and table==3:
-                            print(' ',field[table][line][cell])
+                            print('',field[table][line][cell])
                     elif cell==3 and table!=3:
-                            print(' ',field[table][line][cell],end=' ||')
-            print('-'*45)
+                            print('',field[table][line][cell],end=' ||')
+            print('-'*37)
         if line==3:
-            print('-'*45)
+            print('-'*37)
         elif line<=6 and line>3:
             line1=line-3
             for table in range(4,7):
                 for cell in range(1,4):
                     if cell<3:
-                            print(' ',field[table][line1][cell],end=' |')
+                            print('',field[table][line1][cell],end=' |')
                     elif cell==3 and table==6:
-                            print(' ',field[table][line1][cell])
+                            print('',field[table][line1][cell])
                     elif cell==3 and table!=6:
-                            print(' ',field[table][line1][cell],end=' ||')
-            print('-'*45)
+                            print('',field[table][line1][cell],end=' ||')
+            print('-'*37)
         if line==6:
-            print('-'*45)
+            print('-'*37)
         elif line>6 and line<10:
             line1=line-6
             for table in range(7,10):
                 for cell in range(1,4):
                     if cell<3:
-                            print(' ',field[table][line1][cell],end=' |')
+                            print('',field[table][line1][cell],end=' |')
                     elif cell==3 and table==9:
-                            print(' ',field[table][line1][cell])
+                            print('',field[table][line1][cell])
                     elif cell==3 and table!=9:
-                            print(' ',field[table][line1][cell],end=' ||')
+                            print('',field[table][line1][cell],end=' ||')
             if line!=9:
-                print('-'*45)
+                print('-'*37)
 
 def occupied(pchfield, pchrow,pchcol,field):
     if field[pchfield][pchrow][pchcol]==' ':
