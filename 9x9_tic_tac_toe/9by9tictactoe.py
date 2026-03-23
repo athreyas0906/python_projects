@@ -1,4 +1,8 @@
 #by athreya s, @athreyas0906 on github, made on 5th march,2026
+#update on 23rd march,2026 - added f strings to clean up some code in output statements 
+
+
+
 field={
     1:{
         1:{1:' ',2:' ',3:' '},
@@ -121,9 +125,9 @@ def firstmove(ppref,pchar):
 
 def makemove(pchar,ptomove,pprevchoice):
     psym=pchar[ptomove]
-    print('Player',ptomove,'has to move')
+    print(f'Player {ptomove} has to move')
     pchfield=int(pprevchoice[0])
-    print('Now playing in field',pchfield)
+    print(f'Now playing in field {pchfield}')
     print('Choose square to occupy : (type row_number*10+column_number)')
     pchoice=int(input(''))
     pchrow=int(pchoice//10)
@@ -207,7 +211,7 @@ def checkfieldwin(pchfield,field,fieldwins,pchar):
     winner=winner1+winner2+winner3
     fieldwon=fieldwon1 or fieldwon2 or fieldwon3
     if fieldwon:
-        print('Player',winner,'has won field',pchfield,'!')
+        print(f'Player {winner} has won field {pchfield}!')
         fieldwins[pchfield]=pchar[int(winner)]
 
 def anyrowiswon(field,pcharinv,pchfield):
@@ -265,7 +269,7 @@ chk=True
 while chk:
     gamewinner,checker=checkgamewin(fieldwins)
     if checker:
-        print('Player',gamewinner,'has won the game!')
+        print(f'Player {gamewinner} has won the game!')
         chk=False
     else:
         print()
