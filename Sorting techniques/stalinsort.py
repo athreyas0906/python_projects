@@ -1,4 +1,4 @@
-#made by athreya s 23/03/2026
+#made by @athreyas0906 23/03/2026
 #if any part of the list isn't in order, half of the list is randomly eliminated until the resulting list is in order
 import random
 l=eval(input('Enter elements of list in square brackets : '))
