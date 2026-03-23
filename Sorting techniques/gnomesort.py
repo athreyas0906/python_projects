@@ -1,4 +1,4 @@
-#made by athreyas0906 on 23/3/2026
+#made by @athreyas0906 on 23/03/2026
 #regular sorting algorithm
 l=eval(input('Enter elements of list in square brackets : '))
 llen=len(l)
