@@ -1,3 +1,4 @@
+#basic chat w/ model with context saved
 from langchain.agents import create_agent
 from langchain_ollama import ChatOllama
 from langchain.messages import HumanMessage
