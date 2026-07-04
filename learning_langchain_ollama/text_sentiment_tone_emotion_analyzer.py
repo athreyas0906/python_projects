@@ -44,8 +44,9 @@ def in_context_learning(task_description,  input_text, target_tone_sentiment):
 
 task_desc = "Perform sentiment and tonal analysis on the following, and return a modified version if the target tone and sentiment are different than inferred tone and sentiment"
 #text goes here - 
-text_input = """"""
-target=input("Enter target tone and sentiment : \n")
+text_input = """ """
+#target sentiment emotion and tone goes here
+target=""" """
 
 
 result = in_context_learning(task_desc, text_input, target)
